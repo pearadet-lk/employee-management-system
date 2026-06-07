@@ -1,0 +1,25 @@
+.layout-container {
+  height: 100vh;
+}
+
+.layout-sidenav {
+  width: 240px;
+}
+
+.brand {
+  padding: 1.25rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.active {
+  background: rgba(63, 81, 181, 0.08);
+}
+
+.spacer {
+  flex: 1;
+}
+
+.content {
+  padding: 1.5rem;
+}
