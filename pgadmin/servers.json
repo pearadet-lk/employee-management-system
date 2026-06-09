@@ -1,0 +1,14 @@
+{
+  "Servers": {
+    "1": {
+      "Name": "EMS PostgreSQL (Docker)",
+      "Group": "Servers",
+      "Host": "postgres",
+      "Port": 5432,
+      "MaintenanceDB": "EmployeeManagement",
+      "Username": "ems_user",
+      "Password": "ems_password",
+      "SSLMode": "prefer"
+    }
+  }
+}

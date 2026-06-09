@@ -27,6 +27,23 @@ services:
     volumes:
       - ems_seq_data:/data
 
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: ems-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: Admin123!
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    ports:
+      - "5050:80"
+    volumes:
+      - ems_pgadmin_data:/var/lib/pgadmin
+      - ./pgadmin/servers.json:/pgadmin4/servers.json:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+
 volumes:
   ems_postgres_data:
   ems_seq_data:
+  ems_pgadmin_data:
