@@ -20,7 +20,7 @@ docker compose up -d
 ```
 
 - PostgreSQL: `localhost:5432`
-- Seq logs UI: http://localhost:5341
+- Seq logs UI: http://localhost:5341 (login: `admin` / `Admin123!`)
 
 ### 2. Run API
 
@@ -59,7 +59,7 @@ cd frontend/employee-management-web
 npm start
 ```
 
-Open http://localhost:4200 and log in with a demo user.
+Open http://localhost:51783 and log in with a demo user.
 
 ### Frontend features
 

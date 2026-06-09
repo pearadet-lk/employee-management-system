@@ -32,7 +32,7 @@ try
     {
         options.AddPolicy("Frontend", policy =>
         {
-            policy.WithOrigins(builder.Configuration.GetSection("Cors:Origins").Get<string[]>() ?? ["http://localhost:4200"])
+            policy.WithOrigins(builder.Configuration.GetSection("Cors:Origins").Get<string[]>() ?? ["http://localhost:51783"])
                 .AllowAnyHeader()
                 .AllowAnyMethod()
                 .AllowCredentials();

@@ -74,6 +74,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "port": 51783
+          },
           "configurations": {
             "production": {
               "buildTarget": "employee-management-web:build:production"
